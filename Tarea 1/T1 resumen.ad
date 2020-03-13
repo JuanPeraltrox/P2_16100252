@@ -1,0 +1,186 @@
+= Resumen parcial 1
+
+===  **modelo de cajas **
+ 
+Simplemente ese el comportamiento de los elementos que se representen mediante cajas rectangulares, que de ahí proviene su nombre. +
+Por default los bloques vendrán con la propiedad "_Box-sizing_" establecida con "_content-box_", se recomienda cambiarlo a "_border-box_" como buena practica. +
+Este se compone de los siguientes : +
+
+* Content: Basicamente es el contenido del elemento.
+* Padding: Espacio que está entre el contenido y el borde.
+* Border:  es la distancia desde el borde de un elemento hacia otro. 
+* Margin : Separación de las cajas
+* Outline: Una forma abreviada o reducida  del valor de una o más propiedades.
+
+''''
+
+=== Display
+
+Establece el tipo de caja que se va generar o aplicar hacia el  elemento.
+En esta podemos encontrar varias propiedades, las cuales en clase se aplicaron algunas de ellas
+
+* **block**: bloque en forma rectangular
+* **inline**:la  caja sólo ocupara el espacio necesario para mostrar sus contenidos (El elemento se convierte en linea).
+* **inline-block**: Crea cajas que son de bloque y en línea de forma simultánea, combinando los dos primeros.
+* **none**: No se genera ni una caja , desaparece el elemento. 
+* **box-sizing** : Es como viene por defecto las cajas con la propiedad content-box esto provocara que el border y padding se salgan del width, en cambio el border-box es mas recomendable (antes ya mencionado).
+
+
+''''
+== Flujo de documento
+Es el modo en el que se van colocando los elementos de la página en el navegador, a partir de cómo aparecen en el código HTML y los atributos CSS de los elementos, ya de forma mas resumida, es la posicion donde va cada elemento segun fue programado.
+
+''''
+== Tipo de posicionamiento
+Por defecto los navegadores crean y posicionan los elementos de forma automatica todos los elemento que conforman la página, pero gracias a la ayuda de CSS podemos darle un diseño mucho mas bonito a la vista y también al usuario.+
+Este contiene 5 tipo de posiciones:
+
+* **Static**: Que sería el valor por defecto en el navegador.
+* **Absolute**: todo esto está en relacion con el elemento padre, no va a reservar los espacios de la posicion (en el flujo)
+* **Relative**: respetará su espacio en el elemento padre
+
+* **Fixed**: se queda donde se coloca, no se mueve
+* **Sticky**:  es usado para los encabezados a la hora de darle con el scroll, no se moverá, como Facebook 
+
+''''
+== Unidades de medida
+se emplean para definir la altura, anchura y márgenes de los elementos y para establecer el tamaño de letra del texto. Estas se pueden asignar mediante números enteros o decimales. Todo esto sirve para dar una buena visualización a nuestros trabajos.
+
+== Tipos de medidas
+* Absolutas
+* Relativas
+* Tipográficas
+* Relativas a la fuente
+* Viewport
+
+==== **Absolutas**
+Es una medida que nunca cambiará, están definidas, que no depende de algo. +
+Entre los valores se encuentran: +
+
+* **cm** (centimeter)
+* **mm** (milimeter)
+* **in** (inches)
+
+==== **Relativas**
+Este es un caso contrario a las medidas absolutas, ya que estas no estan definidas y si dependen de otro valor. Ademas que son las más usadas para el diseño web. +
+Las medidas usadas son: +
+
+* **em**: es el tamaño de la fuente con respecto al navegador.
+* **rem**: Se refiere al tamaño  de fuente que viene desde la raíz
+* **ex**: Está basada en la altura de la "_x_" minúscula, que viene siendo la mitad de la fuente del navegador.
+* **ch**: Es el ancho del 0, pero no se usa como las demas medidas. 
+
+''''
+== Selectores 
+==== **Selector básico**
+
+Son las reglas o instrucciones  que indican al navegador a qué elementos se aplicarán las propiedades que nosotros asignaremos.
+Entre ellos se encuentran los siguientes selectores: +
+
+* **Tag**: Son los elementos que vengan por defecto en el html, por ejemplo h1, donde si nosotros asignamos algun color, a todas las etiquetas de h1 se pondrá el mismo color
+[source, css]
+h1
+{
+    color: blue;
+}
+
+* **Id**: Son los nombres que se le pueden asignar a los elementos para poder identificarlos. 
+[source,css]
+#Caja1
+{
+    color: black;
+}
+* **Clase**: Son todos los elementos que esten dentro de una clase tendrán cambios referentes a diseño.
+[source, css]
+.ClaseCompleta
+{
+    color: red;
+}
+
+
+==== Selector de Relación
+Son aquellos que pueden afectar a mas de un elemento de diferentes maneras, aplicando 4 formas o tipos de selectores: +
+
+* **Descendiente (Espacio)**: Son todos los elementos que estan dentro algun contenedor 
+[source, css]
+div h1{
+    color: blue;
+}
+* **Descendiente directo o hijo (>)**: Son todos los hijos directos del elemento padre por asi decirlo
+[source,css]
+h1 > p
+{color: purple;}
+* **Hermano Adyacente (+)**: hermano de otro elemento que sea hermano y esté inmediato del elemento a darle propiedades.
+[source,css]
+div + h2
+{
+    color: pink;
+}
+* **Hermano general (~) **: A diferencia del hermano adyacente, este toma en cuenta todos los hermanos del elemento seleccionado
+[source,css]
+div ~ h1
+{color: red;}
+
+''''
+== Pseudoselectores
+==== Pseudo Elemento
+Estos solamente hacen referencia a un solo elemento a seleccionar en especifico. 
+
+* ::first-letter La primera letra de un elemento de bloque
+* ::first-line La primera línea de un elemento de bloque
+* ::before La ubicación que esta antes de un elemento
+* ::after 
+
+
+==== Pseudo Clase
+Son diferentes estados que se le puede dar los elementos. Si los elementos cumplen con las condiciones se le aplicarán los estilos que el programador le asignó.
+
+
+* **:link**:son los enlaces que el usuario aún no visita
+[source,css]
+a:link
+{color: green ;}
+* **:hover**:Cuando el usuario pasa encima el mouse de algun 
+elemento en especial y está cambia de estilo
+[source,css]
+div:hover {
+  background-color: #F89B4D;
+  color: white;
+}
+* **:visited**: cuando el usuario ya visitó una página
+[source,css]
+a:visited
+{
+    color: aqua;
+
+}
+* **:first-child**: el primer hijo de un elemento
+[source,css]
+div :first-child
+{
+    color: orange; 
+}
+
+''''
+== Cascada
+Son declaraciones para darle estilos a nuestras paginas web, como color, tamaño de la fuente,etc.
+Pero está nos ayudará para aplicar los estilo conforme aparezcan _conflictos_  y saber que elementos se le aplicará los estilo deseados. +
+La forma en que nos pueda ayudar la cascada es mediante: +
+ 1.**Importancia**: Es donde está ubicado el estilo, donde se definió el estilo +
+2.**Especificidad**: Es el peso que tiene el elemento los estilos, en el siguiente punto se será explicará +
+3.**Orden**: si el selector apunta al mismo elemento y tiene la misma especificidad, se tomará en cuenta el orden de como se declaró
+[source,css]
+p{ color: blue;}
+p{color:red;}
+''''
+
+== Especificidad
+Como se ya lo había mencionado, es el peso que tendrá el selector en algún elemento y a este se le aplicará el estilo deseado.
+Cada selector tiene una jerarquía de especifidad: +
+
+* **Elemento tiene valor de 1**
+* **La clase tiene valor de 10**
+* **El Id tiene valor de 100**
+* **La etiqueta en html tiene valor 1000**
+
+Si llega a colocar la regla _**!important**_, este ganara de todas formas, tiene mayor prioridad que las anteriormente mencionadad. No es recomendable abusar de ella, es mala practica.
