@@ -8,7 +8,7 @@ Las únicas limitaciones a la hora de crear variables son:
 1. Los nombres de las variables pueden comenzar por una letra, el guión bajo (_) y el símbolo de dolar ($); el resto de los caracteres puede ser cualquier combinación de los anteriores, además de cifras. Así, registro_01, $vínculos, listaNodos o _cuñao1 son nombres correctos; 1_lista_de_cosas, elementos-lista o nuevo%elemento no.
 2. Los nombres de variables no pueden coincidir con palabras clave pertenecientes a la propia sintaxis de JavaScript, ni con las palabras reservadas, una lista de palabras que se considerá que en el futuro tendrán un significado propio.
 
-_Hay una serie de convenciones — con nombres curiosos— para nombrar variables:_
+_Hay una serie de convenciones  para nombrar variables:_
 
 * **Notación camelCase**: Se escribe la primera palabra del nombre en minúscula, y si el nombre consiste en varias, las siguientes se empiezan por mayúsculas: listaCamposFormulario.
 * **Notación Pascal**: Cada palabra que forme el nombre de la variable se empieza en mayúscula: ListaCamposFormulario.
