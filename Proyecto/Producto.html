@@ -3,85 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-		<style type="text/css">
-			
-			* {
-				margin:0px;
-				padding:0px;
-				background-color: turquoise;
-			}
-			
-			#header {
-				margin:auto;
-				width:max-content;
-				font-family:Verdana, Geneva, Tahoma, sans-serif;
-			}
-			
-			ul, ol {
-				list-style-type:  none;;
-			}
-			
-			.nav > li {
-				float:left;
-			}
-			
-			.nav li a {
-				background-color:#000;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			
-			.nav li a:hover {
-				background-color:deeppink;
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-		
-		</style>
-	</head>
+	<title>Producto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css"> 
+	<link rel="stylesheet" href="leatflet.css">	
+</head>
 	<body>
-        <div class="row main-container middle-xs center-xs">
-          <div class="col-md8 col-sm-10 col-xs-11">
-		     <div id="header">
-			<ul class="nav">
-                <img src="./Imagenes/Logo.png" title="Logo"  width="60px" >
-				<li><a href="./index.html" title="Ir a inicio">Inicio</a>
-				<li><a href="Producto.html" title="Ir a productos">Productos</a>
-					<ul>
-						<li><a href="">Bancas</a></li>
-						<li><a href="">Mesas</a></li>
-						<li><a href="">Adornos</a></li>
+		<div class="menú">
+			<div class="row main-container middle-xs center-xs">
+			  <div class="col-md8 col-sm-10 col-xs-11">
+				 <div class="header">
+					<ul class="navi">
+					<!---->	
+						 <img src="./Imagenes/Logo.png" title="Logo"  width="85	px"  height="45px"> 
 						
+					<!--	<li class="logo-pr"><a href="index.html"><img src="./Imagenes/Logo.png" width="50px" height="50px"></a></li>-->
+						
+						<li><a href="./index.html" title="Ir a inicio">Inicio</a>
+						<li><a href="Producto.html" title="Ir a productos">Productos</a>
+							<ul>
+								<li><a href="">Bancas</a></li>
+								<li><a href="">Mesas</a></li>
+								<li><a href="">Adornos</a></li>
+							
+							</ul>
+						</li>
+						<li><a href="./acercade.html" title="">Acerca de</a> </li>
+						<li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+					
 					</ul>
-				</li>
-				<li><a href="./acercade.html" title="">Acerca de</a> </li>
-                <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
-                
-            </ul>
-           </div>
-        </div>
-    </div>
-		
-	
+				 </div>
+				</div>
+			</div>
+		</div>	
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<!-- Product -->
+					<div class="shop-item">
+						<!-- Product Image -->
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product1.jpg" alt="Item Name"></a>
+						</div>
+						<!-- Product Title -->
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum asasddolor</a></h3>
+						</div>
+						<!-- Product Available Colors-->
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+							<span class="color-blue"></span>
+							<span class="color-orange"></span>
+							<span class="color-green"></span>
+						</div>
+						<!-- Product Price-->
+						<div class="price">
+							<span class="price-was">$959.99</span> $999.99
+						</div>
+						<!-- Product Description-->
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<!-- Add to Cart Button -->
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+					<!-- End Product -->
+				</div>
+				<div class="col-sm-4">
+					<div class="shop-item">
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product2.jpg" alt="Item Name"></a>
+						</div>
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum dolor</a></h3>
+						</div>
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+						</div>
+						<div class="price">
+							$999.99
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="shop-item">
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product3.jpg" alt="Item Name"></a>
+						</div>
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum dolor</a></h3>
+						</div>
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+							<span class="color-blue"></span>
+						</div>
+						<div class="price">
+							$999.99
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="shop-item">
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product4.jpg" alt="Item Name"></a>
+						</div>
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum dolor</a></h3>
+						</div>
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+							<span class="color-blue"></span>
+						</div>
+						<div class="price">
+							$999.99
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="shop-item">
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product5.jpg" alt="Item Name"></a>
+						</div>
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum dolor</a></h3>
+						</div>
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+							<span class="color-blue"></span>
+						</div>
+						<div class="price">
+							$999.99
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="shop-item">
+						<div class="image">
+							<a href="page-product-details.html"><img src="img/product6.jpg" alt="Item Name"></a>
+						</div>
+						<div class="title">
+							<h3><a href="page-product-details.html">Lorem ipsum dolor</a></h3>
+						</div>
+						<div class="colors">
+							<span class="color-white"></span>
+							<span class="color-black"></span>
+						</div>
+						<div class="price">
+							$999.99
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio.</p>
+						</div>
+						<div class="actions">
+							<a href="page-product-details.html" class="btn"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
